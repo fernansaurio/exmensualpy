@@ -12,7 +12,7 @@ val = (float(input('')))
 if type1 == '1':
     result = (val * cm_pulg)
 elif type1 == '2':
-    result = (val * pulg_cm)
+    result = (val * ulg_cm)
 else:
     print("Valor invalido")
 
