@@ -222,7 +222,6 @@ if type_operacion == '1':
             result = (val_mon1 * cord_balb)
         else:
             "Valor invalido"
-    print(result)
 
 elif type_operacion == '2':
     met_kil = (float(0.001))
