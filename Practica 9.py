@@ -888,15 +888,886 @@ elif type_operacion == '4':
     else:
         print("Valor invalido")
 elif type_operacion == '5':
-    print("Conversor de Tiempo:")
+    seg_min = float(0.01666666666666666666666666666667)
+    seg_hora =float(0.00027777777777777777777777777777778)
+    seg_dia = float(0.000011574074074074074074074074074074)
+    seg_sem =float(0.0000016534391534391534391534391534392)
+    seg_años =float(0.000000031709791983764586504312531709792)
+
+    min_seg =float(60)
+    min_hora =float(0.01666666666666666666666666666667)
+    min_dia =float(0.00069444444444444444444444444444444)
+    min_sem =float(0.00099206349206349206349206349206349)
+    min_años = float(0.00000031685678073510773130544993662864)
+
+    hora_seg =float(3600)
+    hora_min =float(60)
+    hora_dia =float(0.04166666666666666666666666666667)
+    hora_sem =float(0.000099206349206349206349206349206349)
+    hora_años =float(0.0000019025875190258751902587519025875)
+
+    dia_seg =float(86400)
+    dia_min =float(1440)
+    dia_hora =float(24)
+    dia_sem= float(0.14285714285714285714285714285714)
+    dia_años=float(0.00273972602739726027397260273973)
+
+    sem_seg=float(604800)
+    sem_min=float(10080)
+    sem_hora=float(168)
+    sem_dias=float(7)
+    sem_años=float(0.01917808219178082191780821917808)
+
+    años_seg=float(31536000)
+    años_min=float(525600)
+    años_hora=float(5760)
+    años_dias=float(365)
+    años_sem=float(52.142857142857142857142857142857)
+
+    print("---Conversor de Tiempo:---")
+    print("1. Segundos")
+    print("2. Minutos")
+    print("3. Horas")
+    print("4. Dias")
+    print("5. Semanas")
+    print("6. Años")
+    type = (input(''))
+    print("---Ingrese la cantidad de tiempo:---")
+    val = (float(input('')))
+
+    if type == '1':
+        print("---A que valor desea convertir:---")
+        print("1. Minutos")
+        print("2. Horas")
+        print("3. Dias")
+        print("4. Semanas")
+        print("5. Años")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * seg_min)
+        elif type2 == '2':
+            result = (val * seg_hora)
+        elif type2 == '3':
+            result = (val * seg_dia)
+        elif type2 == '4':
+            result = (val * seg_sem)
+        elif type2 == '5':
+            result = (val * seg_años)
+        else:
+            print("Valor invalido")
+    elif type == '2':
+        print("---A que valor desea convertir:---")
+        print("1. Segundos")
+        print("2. Horas")
+        print("3. Dias")
+        print("4. Semanas")
+        print("5. Años")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * min_seg)
+        elif type2 =='2':
+            result = (val * min_hora)
+        elif type2 =='2':
+            result = (val * min_dia)
+        elif type2 =='2':
+            result = (val * min_sem)
+        elif type2 =='2':
+            result = (val * min_años)
+        else:
+            print("Valor invalido")
+    elif type == '3':
+        print("---A que valor desea convertir:---")
+        print("1. Segundos")
+        print("2. Minutos")
+        print("4. Dias")
+        print("5. Semanas")
+        print("6. Años")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * hora_seg)
+        elif type2 == '2':
+            result = (val * hora_min)
+        elif type2 == '3':
+            result = (val * hora_dia)
+        elif type2 == '4':
+            result = (val * hora_sem)
+        elif type2 == '5':
+            result = (val * hora_años)
+        else:
+            print("Valor invalido")
+    elif type == '4':
+        print("---A que valor desea convertir:---")
+        print("1. Segundos")
+        print("2. Minutos")
+        print("3. Horas")
+        print("4. Semanas")
+        print("5. Años")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * dia_seg)
+        elif type2 == '2':
+            result = (val * dia_min)
+        elif type2 == '3':
+            result = (val * dia_hora)
+        elif type2 == '4':
+            result = (val * dia_sem)
+        elif type2 == '5':
+            result = (val * dia_años)
+        else:
+            print("Valor invalido")
+    elif type == '5':
+        print("---A que valor desea convertir:---")
+        print("1. Segundos")
+        print("2. Minutos")
+        print("3. Horas")
+        print("4. Dias")
+        print("5. Años")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * sem_seg)
+        elif type2 == '2':
+            result = (val * sem_min)
+        elif type2 == '3':
+            result = (val * sem_hora)
+        elif type2 == '4':
+            result = (val * sem_dias)
+        elif type2 == '5':
+            result = (val * sem_años)
+        else:
+            print("Valor invalido")
+    elif type == '6':
+        print("---A que valor desea convertir:---")
+        print("1. Segundos")
+        print("2. Minutos")
+        print("3. Horas")
+        print("4. Dias")
+        print("5. Semanas")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * años_seg)
+        elif type2 == '2':
+            result = (val * años_min)
+        elif type2 == '3':
+            result = (val * años_hora)
+        elif type2 == '4':
+            result = (val * años_dias)
+        elif type2 == '5':
+            result = (val * años_sem)
+        else:
+            print("Valor invalido")
+    else:
+        print("Valor invalido")
 elif type_operacion == '6':
-    print("Conversor de Volumen:")
+    dm_cm = float(10)
+    dm_m = float(0.1)
+    dm_pulg = float(3.937)
+    dm_km = float(0.0001)
+    dm_pie = float(0.328)
+    dm_gal = float(0.0264172)
+    dm_l = float(1)
+
+    cm_dm = float(0.1)
+    cm_m = float(0.01)
+    cm_pulg = float(0.3937)
+    cm_km = float(0.00001)
+    cm_pie = float(0.0328)
+    cm_gal = float(0.00264172)
+    cm_l = float(0.01)
+
+    m_dm = float(10)
+    m_cm = float(100)
+    m_pulg = float(39.37)
+    m_km = float(0.001)
+    m_pie = float(3.281)
+    m_gal = float(264.172)
+    m_l = float(1000)
+
+    pulg_dm = float(0.254)
+    pulg_cm = float(2.54)
+    pulg_m = float(0.0254)
+    pulg_km = float(0.0000254)
+    pulg_pie = float(0.0833)
+    pulg_gal = float(0.004329)
+    pulg_l = float(0.0163871)
+
+    km_dm = float(10000)
+    km_cm = float(100000)
+    km_m = float(1000)
+    km_pulg = float(39370.1)
+    km_pie = float(3280.84)
+    km_gal = float(2641.72)
+    km_l = float(1000000)
+
+    pie_dm = float(3.048)
+    pie_cm = float(30.48)
+    pie_m = float(0.3048)
+    pie_pulg = float(12)
+    pie_km = float(0.0003048)
+    pie_gal = float(8)
+    pie_l = float(28.3168)
+
+    gal_dm = float(37.8541)
+    gal_cm = float(3785.41)
+    gal_m = float(0.00378541)
+    gal_pulg = float(231)
+    gal_km = float(0.00000378541)
+    gal_pie = float(0.125)
+    gal_l = float(3.78541)
+
+    l_dm = float(1)
+    l_cm = float(100)
+    l_m = float(0.001)
+    l_pulg = float(61.0237)
+    l_km = float(0.000001)
+    l_pie = float(0.03281)
+    l_gal = float(0.264172)
+    print("---Conversor de Volumen:---")
+    print("---¿Qué valor desea convertir?---")
+    print("1. Decimetro^3")
+    print("2. Centimetro^3")
+    print("3. Metro^3")
+    print("4. Kilometro^3")
+    print("5. Pulgadas^3")
+    print("6. Pie^3")
+    print("7. Galones^3")
+    print("8. Litros^3")
+    type1 = (input(''))
+    print("---Escribe el valor de la unidad a convertir---")
+    val =(float(input('')))
+    if type1 == '1':
+        print("---A que valor desea convertir---")
+        print("1. Centimetro^3")
+        print("2. Metro^3")
+        print("3. Kilometro^3")
+        print("4. Pulgadas^3")
+        print("5. Pie^3")
+        print("6. Galones^3")
+        print("7. Litros^3")
+        type2 = (input(''))
+        if type2 == '1':
+            result =(val * dm_cm)
+        elif type2 == '2':
+            result =(val * dm_m)
+        elif type2 == '3':
+            result =(val * dm_km)
+        elif type2 == '4':
+            result =(val * dm_pulg)
+        elif type2 == '5':
+            result =(val * dm_pie)
+        elif type2 == '6':
+            result =(val * dm_gal)
+        elif type2 == '7':
+            result =(val * dm_l)
+        else:
+            print("Valor invalido")
+    elif type1 == '2':
+        print("---A que valor desea convertir---")
+        print("1. Decimetro^3")
+        print("2. Metro^3")
+        print("3. Kilometro^3")
+        print("4. Pulgadas^3")
+        print("5. Pie^3")
+        print("6. Galones^3")
+        print("7. Litros^3")
+        type2 = (input(''))
+        if type2 == '1':
+            result =(val * cm_dm)
+        elif type2 == '2':
+            result =(val * cm_m)
+        elif type2 == '3':
+            result =(val * cm_km)
+        elif type2 == '4':
+            result =(val * cm_pulg)
+        elif type2 == '5':
+            result =(val * cm_pie)
+        elif type2 == '6':
+            result =(val * cm_gal)
+        elif type2 == '7':
+            result =(val * cm_l)
+        else:
+            print("Valor invalido")
+    elif type1 == '3':
+        print("---A que valor desea convertir---")
+        print("1. Decimetro^3")
+        print("2. Centimetro^3")
+        print("3. Kilometro^3")
+        print("4. Pulgadas^3")
+        print("5. Pie^3")
+        print("6. Galones^3")
+        print("7. Litros^3")
+        type2 = (input(''))
+        if type2 == '1':
+            result =(val * m_dm)
+        elif type2 == '2':
+            result =(val * m_cm)
+        elif type2 == '3':
+            result =(val * m_km)
+        elif type2 == '4':
+            result =(val * m_pulg)
+        elif type2 == '5':
+            result =(val * m_pie)
+        elif type2 == '6':
+            result =(val * m_gal)
+        elif type2 == '7':
+            result =(val * m_l)
+        else:
+            print("Valor invalido")
+    elif type1 == '4':
+        print("---A que valor desea convertir---")
+        print("1. Decimetro^3")
+        print("2. Centimetro^3")
+        print("3. Metro^3")
+        print("4. Pulgadas^3")
+        print("5. Pie^3")
+        print("6. Galones^3")
+        print("7. Litros^3")
+        type2 = (input(''))
+        if type2 == '1':
+            result =(val * km_dm)
+        elif type2 == '2':
+            result =(val * km_cm)
+        elif type2 == '3':
+            result =(val * km_m)
+        elif type2 == '4':
+            result =(val * km_pulg)
+        elif type2 == '5':
+            result =(val * km_pie)
+        elif type2 == '6':
+            result =(val * km_gal)
+        elif type2 == '7':
+            result =(val * km_l)
+        else:
+            print("Valor invalido")
+    elif type1 == '5':
+        print("---A que valor desea convertir---")
+        print("1. Decimetro^3")
+        print("2. Centimetro^3")
+        print("3. Metro^3")
+        print("4. Kilometro^3")
+        print("5. Pie^3")
+        print("6. Galones^3")
+        print("7. Litros^3")
+        type2 = (input(''))
+        if type2 == '1':
+            result =(val * pulg_dm)
+        elif type2 == '2':
+            result =(val * pulg_cm)
+        elif type2 == '3':
+            result =(val * pulg_m)
+        elif type2 == '4':
+            result =(val * pulg_km)
+        elif type2 == '5':
+            result =(val * pulg_pie)
+        elif type2 == '6':
+            result =(val * pulg_gal)
+        elif type2 == '7':
+            result =(val * pulg_l)
+        else:
+            print("Valor invalido")
+    elif type1 == '6':
+        print("---A que valor desea convertir---")
+        print("1. Decimetro^3")
+        print("2. Centimetro^3")
+        print("3. Metro^3")
+        print("4. Kilometro^3")
+        print("5. Pulgadas^3")
+        print("6. Galones^3")
+        print("7. Litros^3")
+        type2 = (input(''))
+        if type2 == '1':
+            result =(val * pie_dm)
+        elif type2 == '2':
+            result =(val * pie_cm)
+        elif type2 == '3':
+            result =(val * pie_m)
+        elif type2 == '4':
+            result =(val * pie_km)
+        elif type2 == '5':
+            result =(val * pie_pulg)
+        elif type2 == '6':
+            result =(val * pie_gal)
+        elif type2 == '7':
+            result =(val * pie_l)
+        else:
+            print("Valor invalido")
+    elif type1 == '7':       
+        print("---A que valor desea convertir---")
+        print("1. Decimetro^3")
+        print("2. Centimetro^3")
+        print("3. Metro^3")
+        print("4. Kilometro^3")
+        print("5. Pulgadas^3")
+        print("6. Pie^3")
+        print("7. Litros^3")
+        type2 = (input(''))
+        if type2 == '1':
+            result =(val * gal_dm)
+        elif type2 == '2':
+            result =(val * gal_cm)
+        elif type2 == '3':
+            result =(val * gal_m)
+        elif type2 == '4':
+            result =(val * gal_km)
+        elif type2 == '5':
+            result =(val * gal_pulg)
+        elif type2 == '6':
+            result =(val * gal_pie)
+        elif type2 == '7':
+            result =(val * gal_l)
+        else:
+            print("Valor invalido")
+    elif type1 == '8':
+        print("---A que valor desea convertir---")
+        print("1. Decimetro^3")
+        print("2. Centimetro^3")
+        print("3. Metro^3")
+        print("4. Kilometro^3")
+        print("5. Pulgadas^3")
+        print("6. Pie^3")
+        print("7. Galones^3")
+        type2 = (input(''))
+        if type2 == '1':
+            result =(val * l_dm)
+        elif type2 == '2':
+            result =(val * l_cm)
+        elif type2 == '3':
+            result =(val * l_m)
+        elif type2 == '4':
+            result =(val * l_km)
+        elif type2 == '5':
+            result =(val * l_pulg)
+        elif type2 == '6':
+            result =(val * l_pie)
+        elif type2 == '7':
+            result =(val * l_gal)
+        else:
+            print("Valor invalido")
+    else:
+        print("Valor invalido")
 elif type_operacion == '7':
-    print("Conversor de Area:")
+    print("---Conversor de Area:---")
+    m_cm = float(10000)
+    m_dm = float(100)
+    m_km = float(0.000001)
+    m_pulg = float(1550.0031)
+    m_pies = float(10.7639)
+    m_hec = float(0.0001)
+    m_acr = float(0.000247105)
+    m_mill = float(0.000000386102)
+
+    cm_m = float(0.0001)
+    cm_dm = float(0.01)
+    cm_km = float(0.0000000001)
+    cm_pulg = float(0.155)
+    cm_pies = float(0.001076)
+    cm_hec = float(0.00000001)
+    cm_acr = float(0.0000000247105)
+    cm_mill = float(0.0000000000386102)
+
+    dm_m = float(0.01)
+    dm_cm = float(100)
+    dm_km = float(0.00000001)
+    dm_pulg = float(15.5)
+    dm_pies = float(0.107639)
+    dm_hec = float(0.000001)
+    dm_acr = float(0.00000247105)
+    dm_mill = float(0.00000000386102)
+
+    km_m = float(1000000)
+    km_cm = float(100000000000)
+    km_dm = float(100000000)
+    km_pulg = float(1550003100)
+    km_pies = float(10763910.4)
+    km_hec = float(10000)
+    km_acr = float(247.105)
+    km_mill = float(0.386102)
+
+    pulg_m = float(0.00064516)
+    pulg_cm = float(6.4516)
+    pulg_dm = float(0.064516)
+    pulg_km = float(0.00000000064516)
+    pulg_pies = float(0.00694444)
+    pulg_hec = float(0.000000064516)
+    pulg_acr = float(0.0000001594225)
+    pulg_mill = float(0.0000000002490975)
+
+    pies_m = float(0.092903)
+    pies_cm = float(929.03)
+    pies_dm = float(9.2903)
+    pies_km = float(0.000000092903)
+    pies_pulg = float(144)
+    pies_hec = float(0.0000092903)
+    pies_acr = float(0.0000229568)
+    pies_mill = float(0.0000000358701)
+
+    hec_m = float(10000)
+    hec_cm = float(100000000000)
+    hec_dm = float(100000000)
+    hec_km = float(0.01)
+    hec_pulg = float(15500031)
+    hec_pies = float(107639.104)
+    hec_acr = float(2.47105)
+    hec_mill = float(0.00386102)
+
+    acr_m = float(4046.86)
+    acr_cm = float(40468600)
+    acr_dm = float(404686)
+    acr_km = float(0.00404686)
+    acr_pulg = float(6272640)
+    acr_pies = float(43560)
+    acr_hec = float(0.404686)
+    acr_mill = float(0.0015625)
+
+    mill_m = float(2589988.11)
+    mill_cm = float(2589988110336)
+    mill_dm = float(25899881103.36)
+    mill_km = float(2.589988)
+    mill_pulg = float(4014489600)
+    mill_pies = float(27878400)
+    mill_hec = float(258.998811)
+    mill_acr = float(640)
+    print("---Ingrese que unidad desea convertir---")
+    print("1. Metros cuadrados")
+    print("2. Centimetros cuadrados")
+    print("3. Decimetros cuadrados")
+    print("4. Kilometros cuadrados")
+    print("5. Pulgadas cuadradas")
+    print("6. Pies cuadrados")
+    print("7. Hectareas")
+    print("8. Acres")
+    print("9. Millas cuadradas")
+    type1 = (input(''))
+    print("---Ingrese el valor de la unidad a convertir---")
+    val = (float(input('')))
+    if type1 == '1':
+        print("---¿A qué valor desea convertirlo?---")
+        print("1. Centimetros cuadrados")
+        print("2. Decimetros cuadrados")
+        print("3. Kilometros cuadrados")
+        print("4. Pulgadas cuadradas")
+        print("5. Pies cuadrados")
+        print("6. Hectareas")
+        print("7. Acres")
+        print("8. Millas cuadradas")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * m_cm)
+        elif type2 == '2':
+            result = (val * m_dm)
+        elif type2 == '3':
+            result = (val * m_km)
+        elif type2 == '4':
+            result = (val * m_pulg)
+        elif type2 == '5':
+            result = (val * m_pies)
+        elif type2 == '6':
+            result = (val * m_hec)
+        elif type2 == '7':
+            result = (val * m_acr)
+        elif type2 == '8':
+            result = (val * m_mill)
+        else:
+            print("Valor invalido")
+    elif type1 == '2':
+        print("---¿A qué valor desea convertirlo?---")
+        print("1. Metros cuadrados")
+        print("2. Decimetros cuadrados")
+        print("3. Kilometros cuadrados")
+        print("4. Pulgadas cuadradas")
+        print("5. Pies cuadrados")
+        print("6. Hectareas")
+        print("7. Acres")
+        print("8. Millas cuadradas")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * cm_m)
+        elif type2 == '2':
+            result = (val * cm_dm)
+        elif type2 == '3':
+            result = (val * cm_km)
+        elif type2 == '4':
+            result = (val * cm_pulg)
+        elif type2 == '5':
+            result = (val * cm_pies)
+        elif type2 == '6':
+            result = (val * cm_hec)
+        elif type2 == '7':
+            result = (val * cm_acr)
+        elif type2 == '8':
+            result = (val * cm_mill)
+        else:
+            print("Valor invalido")
+    elif type1 == '3':
+        print("---¿A qué valor desea convertirlo?---")
+        print("1. Metros cuadrados")
+        print("2. Centimetros cuadrados")
+        print("3. Kilometros cuadrados")
+        print("4. Pulgadas cuadradas")
+        print("5. Pies cuadrados")
+        print("6. Hectareas")
+        print("7. Acres")
+        print("8. Millas cuadradas")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * dm_m)
+        elif type2 == '2':
+            result = (val * dm_cm)
+        elif type2 == '3':
+            result = (val * dm_km)
+        elif type2 == '4':
+            result = (val * dm_pulg)
+        elif type2 == '5':
+            result = (val * dm_pies)
+        elif type2 == '6':
+            result = (val * dm_hec)
+        elif type2 == '7':
+            result = (val * dm_acr)
+        elif type2 == '8':
+            result = (val * dm_mill)
+        else:
+            print("Valor invalido")
+    elif type1 == '4':
+        print("---¿A qué valor desea convertirlo?---")
+        print("1. Metros cuadrados")
+        print("2. Centimetros cuadrados")
+        print("3. Decimetros cuadrados")
+        print("4. Pulgadas cuadradas")
+        print("5. Pies cuadrados")
+        print("6. Hectareas")
+        print("7. Acres")
+        print("8. Millas cuadradas")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * km_m)
+        elif type2 == '2':
+            result = (val * km_cm)
+        elif type2 == '3':
+            result = (val * km_dm)
+        elif type2 == '4':
+            result = (val * km_pulg)
+        elif type2 == '5':
+            result = (val * km_pies)
+        elif type2 == '6':
+            result = (val * km_hec)
+        elif type2 == '7':
+            result = (val * km_acr)
+        elif type2 == '8':
+            result = (val * km_mill)
+        else:
+            print("Valor invalido")
+    elif type1 == '5':
+        print("---¿A qué valor desea convertirlo?---")
+        print("1. Metros cuadrados")
+        print("2. Centimetros cuadrados")
+        print("3. Decimetros cuadrados")
+        print("4. Kilometros cuadrados")
+        print("5. Pies cuadrados")
+        print("6. Hectareas")
+        print("7. Acres")
+        print("8. Millas cuadradas")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * pulg_m)
+        elif type2 == '2':
+            result = (val * pulg_cm)
+        elif type2 == '3':
+            result = (val * pulg_dm)
+        elif type2 == '4':
+            result = (val * pulg_km)
+        elif type2 == '5':
+            result = (val * pulg_pies)
+        elif type2 == '6':
+            result = (val * pulg_hec)
+        elif type2 == '7':
+            result = (val * pulg_acr)
+        elif type2 == '8':
+            result = (val * pulg_mill)
+        else:
+            print("Valor invalido")
+    elif type1 == '6':
+        print("---¿A qué valor desea convertirlo?---")
+        print("1. Metros cuadrados")
+        print("2. Centimetros cuadrados")
+        print("3. Decimetros cuadrados")
+        print("4. Kilometros cuadrados")
+        print("5. Pulgadas cuadradas")
+        print("6. Hectareas")
+        print("7. Acres")
+        print("8. Millas cuadradas")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * pies_m)
+        elif type2 == '2':
+            result = (val * pies_cm)
+        elif type2 == '3':
+            result = (val * pies_dm)
+        elif type2 == '4':
+            result = (val * pies_km)
+        elif type2 == '5':
+            result = (val * pies_pulg)
+        elif type2 == '6':
+            result = (val * pies_hec)
+        elif type2 == '7':
+            result = (val * pies_acr)
+        elif type2 == '8':
+            result = (val * pies_mill)
+        else:
+            print("Valor invalido")
+    elif type1 == '7':
+        print("---¿A qué valor desea convertirlo?---")
+        print("1. Metros cuadrados")
+        print("2. Centimetros cuadrados")
+        print("3. Decimetros cuadrados")
+        print("4. Kilometros cuadrados")
+        print("5. Pulgadas cuadradas")
+        print("6. Pies cuadrados")
+        print("7. Acres")
+        print("8. Millas cuadradas")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * hec_m)
+        elif type2 == '2':
+            result = (val * hec_cm)
+        elif type2 == '3':
+            result = (val * hec_dm)
+        elif type2 == '4':
+            result = (val * hec_km)
+        elif type2 == '5':
+            result = (val * hec_pulg)
+        elif type2 == '6':
+            result = (val * hec_pies)
+        elif type2 == '7':
+            result = (val * hec_acr)
+        elif type2 == '8':
+            result = (val * hec_mill)
+        else:
+            print("Valor invalido")
+    elif type1 == '8':
+        print("---¿A qué valor desea convertirlo?---")
+        print("1. Metros cuadrados")
+        print("2. Centimetros cuadrados")
+        print("3. Decimetros cuadrados")
+        print("4. Kilometros cuadrados")
+        print("5. Pulgadas cuadradas")
+        print("6. Pies cuadrados")
+        print("7. Hectareas")
+        print("8. Millas cuadradas")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * acr_m)
+        elif type2 == '2':
+            result = (val * acr_cm)
+        elif type2 == '3':
+            result = (val * acr_dm)
+        elif type2 == '4':
+            result = (val * acr_km)
+        elif type2 == '5':
+            result = (val * acr_pulg)
+        elif type2 == '6':
+            result = (val * acr_pies)
+        elif type2 == '7':
+            result = (val * acr_hec)
+        elif type2 == '8':
+            result = (val * acr_mill)
+        else:
+            print("Valor invalido")
+    elif type1 == '9':
+        print("---¿A qué valor desea convertirlo?---")
+        print("1. Metros cuadrados")
+        print("2. Centimetros cuadrados")
+        print("3. Decimetros cuadrados")
+        print("4. Kilometros cuadrados")
+        print("5. Pulgadas cuadradas")
+        print("6. Pies cuadrados")
+        print("7. Hectareas")
+        print("8. Acres")
+        type2 = (input(''))
+        if type2 == '1':
+            result = (val * mill_m)
+        elif type2 == '2':
+            result = (val * mill_cm)
+        elif type2 == '3':
+            result = (val * mill_dm)
+        elif type2 == '4':
+            result = (val * mill_km)
+        elif type2 == '5':
+            result = (val * mill_pulg)
+        elif type2 == '6':
+            result = (val * mill_pies)
+        elif type2 == '7':
+            result = (val * mill_hec)
+        elif type2 == '8':
+            result = (val * mill_mill)
+        else:
+            print("Valor invalido")
+    else: 
+        print("Valor invalido")
 elif type_operacion == '8':
-    print("Convertir Manzanas:")
+    man_m = float(6987)
+    man_hec = float(0.6987)
+    man_acr = float(1.7259)
+    man_km = float(0.00006987)
+    man_pies = float(75003.89)
+    man_pulg = float(10890078.24)
+    man_mill = float(0.00002707)
+
+    print("---Convertir Manzanas:---")
+    print("---Ingrese la cantidad de manzanas---")
+    val = (float(input('')))
+    print("---¿A que unidad desea convertir las manzanas---")
+    print("1. Metros Cuadrados")
+    print("2. Hectáreas")
+    print("3. Acres")
+    print("4. Kilometros cuadrados")
+    print("5. Pies cuadrados")
+    print("6. Pulgadas cuadradas")
+    print("7. Millas cuadradas")
+    type1 = (input(''))
+    if type1 == '1':
+        result = (val * man_m)
+    elif type1 == '2':
+        result = (val * man_hec)
+    elif type1 == '3':
+        result = (val * man_acr)
+    elif type1 == '4':
+        result = (val * man_km)
+    elif type1 == '5':
+        result = (val * man_pies)
+    elif type1 == '6':
+        result = (val * man_pulg)
+    elif type1 == '7':
+        result = (val * man_mill)
+    else:
+        print("Valor invalido")
+
 elif type_operacion == '9': 
-    print("Conversor de Hectareas:")    
+    hec_m = float(10000)
+    hec_km = float(0.01)
+    hec_acr = float(2.47105)
+    hec_mi = float(0.00386102)
+    hec_tareas = float(143)
+    print("---Conversor de Hectareas:---")
+    print("---Ingrese el valor en hectareas---")  
+    val = (float(input('')))
+    print("---¿A que valor desea convertir?---")
+    print("1. Metros cuadrados") 
+    print("2. Kilometros cuadrados")
+    print("3. Acres")
+    print("4. Millas cuadradas")
+    print("5. Tareas")
+    type1 =(input('')) 
+    if type1 == '1':
+        result = (val * hec_m)
+    elif type1 == '2':
+        result = (val * hec_km)
+    elif type1 == '3':
+        result = (val * hec_acr)
+    elif type1 == '4':
+        result = (val * hec_mi)
+    elif type1 == '5':
+        result = (val * hec_tareas)
+    else:
+        print("Valor invalido")
 else:
     print("Operación no válida")
 
