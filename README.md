@@ -1,6 +1,6 @@
 # EXAMEN MENSUAL
 
 # Integrantes:
--Nixon Yahir Chevez 
--Diego Joseph Jandres 
--Fernando José Padilla
+-Nixon Yahir Chevez <br>
+-Diego Joseph Jandres <br>
+-Fernando José Padilla<br>
