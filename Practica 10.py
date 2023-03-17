@@ -1,34 +1,40 @@
 import pandas as pd
-Itramo = float(0.01)
-IItramo = float(472.1)
-IIItramo = float(895.25)
-IVtramo = float(2038.11)
-ISSS = float(0.03)
-AFP = float(0.0725)
 
-des2 = float(0.1)
-des3 = float(0.2)
-des4 = float(0.3)
+ISSS = 0.03
+AFP = 0.0725
 
-sueldo=float(input("escribe tu sueldo: $ "))
+def calcular_descuentos(sueldo):
+    if sueldo <= 0:
+        raise ValueError("El sueldo debe ser mayor que cero.")
+    elif sueldo <= 472.01:
+        descuento_retencion = 0
+    elif sueldo <= 895.24:
+        descuento_retencion = sueldo * 0.1
+    elif sueldo <= 2038.10:
+        descuento_retencion = sueldo * 0.2
+    else:
+        descuento_retencion = sueldo * 0.3
 
-if sueldo <Itramo:
- print("No hay isr")
-elif sueldo <IItramo:
-    resultadodes = (sueldo * des2)
-elif sueldo <IIItramo:
-    resultadodes = (sueldo * des3)
-elif sueldo <IVtramo:
+    descuento_ISSS = sueldo * ISSS
+    descuento_AFP = sueldo * AFP
+    total_descuentos = descuento_ISSS + descuento_AFP + descuento_retencion
+    sueldo_neto = sueldo - total_descuentos
+    
+    return [descuento_retencion, descuento_ISSS, descuento_AFP, total_descuentos, sueldo_neto]
 
-    resultadodes = (sueldo * des4)
+sueldo = float(input('Ingrese el sueldo: '))
 
+try:
+    descuentos = calcular_descuentos(sueldo)
+    tabla = pd.DataFrame({
+        'Sueldo': [sueldo],
+        'Retención': [descuentos[0]],
+        'Sueldo - ISSS': [descuentos[1]],
+        'Sueldo - AFP': [descuentos[2]],
+        'Total del descuento': [descuentos[3]],
+        'Total del sueldo': [descuentos[4]],
+    })
 
-resultadoISSS = (sueldo * ISSS)
-resultadoAFP = (sueldo * AFP)
-resultadototal= (resultadodes+resultadoISSS+resultadoAFP)
-total = float(sueldo-resultadototal)
-
-tabla = pd.DataFrame({'--': ['Sueldo', 'Sueldo - ISSS', 'Sueldo - AFP', 'Total del descuento', 'Total del sueldo'],
-                      '--': [sueldo, resultadoISSS, resultadoAFP, resultadototal, total],})
-
-print(tabla)
+    print(tabla)
+except ValueError as error:
+    print("Error")
