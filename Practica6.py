@@ -10,4 +10,4 @@ precio = (float(input('')))
 if type1 == '1':
     result = (precio * kw)
 
-print("El precio a pagar es", result)
+print("El precio a pagar es", result, "$")

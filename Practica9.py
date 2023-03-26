@@ -10,7 +10,6 @@ print("8. Manzanas")
 print("9. Hectareas")
 type_operacion = (input(''))
 
-
 if type_operacion == '1':
     bel_cost = float(277.62891)
     bel_dol = float(0.50)

@@ -1,6 +1,6 @@
-#12
 v1 = float(input("Introduce tu primer número: "))
 v2 = float(input("Introduce tu segundo número: "))
+
 opcion = 0
 while True:
     print("""Dime, ¿qué quieres hacer?

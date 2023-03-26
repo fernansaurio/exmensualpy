@@ -36,5 +36,6 @@ try:
     })
 
     print(tabla)
+    
 except ValueError as error:
     print("Error")
