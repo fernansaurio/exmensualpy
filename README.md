@@ -1,4 +1,4 @@
-# EXAMEN MENSUAL
+# EXAMEN MENSUAL DE INFORMÁTICA
 
 # Integrantes:
 -Nixon Yahir Chevez <br>
