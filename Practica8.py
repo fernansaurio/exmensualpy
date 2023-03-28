@@ -1,6 +1,8 @@
 print("---¿De que número es multiplo?---")
 num = int(input("Introduce un número: "))
 
+#La division de cualquier numero entre 2, va a devolver los decimales unicamente
+#Estos decimales los va a igualar a 0, ya que si los decimales son 0, es multiplo de dicho numeor
 if num % 2 == 0:
     print(num, "es múltiplo de 2.")
 else:

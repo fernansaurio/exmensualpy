@@ -7,7 +7,6 @@ print("2. Pulgadas")
 
 type1 = (input(''))
 
-
 if type1 == '1':
     print("Escribe la cantidad a convertir")
     val = (float(input('')))
@@ -20,5 +19,6 @@ elif type1 == '2':
 
 else:
     print("Valor invalido")
+
 
 print("El resultado de la conversion es", result)

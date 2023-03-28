@@ -6,7 +6,7 @@ AFP = 0.0725
 def calcular_descuentos(sueldo):
     if sueldo <= 0:
         raise ValueError("El sueldo debe ser mayor que cero.")
-    elif sueldo <= 472.01:
+    elif sueldo <= 472.00:
         descuento_retencion = 0
     elif sueldo <= 895.24:
         descuento_retencion = sueldo * 0.1
@@ -29,10 +29,10 @@ try:
     tabla = pd.DataFrame({
         'Sueldo': [sueldo],
         'Retención': [descuentos[0]],
-        'Sueldo - ISSS': [descuentos[1]],
-        'Sueldo - AFP': [descuentos[2]],
-        'Total del descuento': [descuentos[3]],
-        'Total del sueldo': [descuentos[4]],
+        'ISSS': [descuentos[1]],
+        'AFP': [descuentos[2]],
+        'Total descuentos': [descuentos[3]],
+        'Total sueldo': [descuentos[4]],
     })
 
     print(tabla)
