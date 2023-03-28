@@ -800,7 +800,6 @@ elif type_operacion == '4':
         print("5. Terabyte")
         type_bit2 = (input(''))
         print("---Escribe el valor de la unidad a convertir---")
-        val = (float(input("")))
         if type_bit2 == '1':
             result = (val * kb_bit)
         elif type_bit2 == '2':
